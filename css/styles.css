@@ -1,0 +1,25 @@
+body {
+  background-color: #bdbdbd;
+  font-family: 'Roboto', sans-serif; }
+
+.logo {
+  width: 70vh; }
+
+.apresentacao > .nome {
+  font-family: 'Montserrat';
+  font-size: 2.5rem;
+  padding-top: 10px; }
+
+.apresentacao > .foto {
+  max-width: 150px;
+  border-radius: 50%; }
+
+.apresentacao > .social-media {
+  list-style-type: none;
+  display: block; }
+  .apresentacao > .social-media > .item {
+    display: inline-block;
+    width: 50px;
+    padding: 5px; }
+    .apresentacao > .social-media > .item .icon {
+      width: 50px; }

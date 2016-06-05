@@ -1,0 +1,30 @@
+@import 'defaults';
+@import 'mixins';
+
+.logo {
+	width: 70vh;
+}
+
+.apresentacao {
+	>.nome {
+		font-family: 'Montserrat';
+		font-size: 2.5rem;
+		padding-top: 10px;
+	}
+	>.foto {
+		max-width: 150px;
+		border-radius: 50%;
+	}
+	>.social-media {
+		list-style-type: none;
+		display: block;
+		>.item {
+			display: inline-block;
+			width: 50px;
+			padding: 5px;
+			.icon {
+				width: 50px;
+			}
+		}
+	}
+}
