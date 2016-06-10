@@ -1,6 +1,26 @@
 $indigoA100: #bdbdbd;
+$fa-font-path:"../node_modules/font-awesome/fonts";
+@import "../node_modules/font-awesome/scss/font-awesome";
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return #{$remSize}rem;
+}
 
 body {
 	background-color: $indigoA100;
 	font-family: 'Roboto', sans-serif;
+}
+
+.left {
+  float: left;
+  text-align: left;
+}
+
+.list-style-none {
+  list-style: none;
+}
+
+.no-margin-top {
+  margin-top: 0 !important;
 }
