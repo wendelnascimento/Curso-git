@@ -7,6 +7,10 @@ var uglify = require('gulp-uglify');
 var sass = require('gulp-sass');
 var browserSync = require('browser-sync');
 
+// Corrige o erro no build do travis
+// http://stackoverflow.com/questions/32490328/gulp-autoprefixer-throwing-referenceerror-promise-is-not-defined
+require('es6-promise').polyfill();
+
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
