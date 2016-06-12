@@ -57,3 +57,5 @@ gulp.task('default', ['browser-sync', 'styles'], function(){
   gulp.watch("scripts/**/*.js", ['scripts']);
   gulp.watch("*.html", ['bs-reload']);
 });
+
+gulp.task('travis', ['scripts', 'styles']);
