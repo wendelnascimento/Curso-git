@@ -4,12 +4,12 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>reveal.js</title>
+		<title>Git ninja!</title>
 
 		<link rel="stylesheet" href="css/reveal.css">
 
-		<!-- Theme used for syntax highlighting of code
-		<link rel="stylesheet" href="lib/css/zenburn.css"> -->
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
 
 		<link rel="stylesheet" href="css/styles.css">
 
@@ -93,8 +93,8 @@
 					<section>
 						<ul class="list-style-none lista-features">
 							<li class="item medium-text">Performace <i class="fa fa-rocket"></i></li>
-							<li class="item medium-text">Segurança <i class="fa fa-lock"></i></li>
-							<li class="item medium-text">Flexibilidade <i class="fa fa-list-ul"></i></li>
+							<li class="item medium-text fragment fade-in">Segurança <i class="fa fa-lock"></i></li>
+							<li class="item medium-text fragment fade-in">Flexibilidade <i class="fa fa-list-ul"></i></li>
 						</ul>
 					</section>
 					<!-- <img src="img/meobrigue.gif" alt=""> -->
@@ -129,9 +129,8 @@
 							Aplicável não apenas na área de desenvolvimento, pode ser usado para marketing, design, suporte ao consumidor e até mesmo para <strong>RH</strong>!
 						</h2>
 					</section>
-					<section>
-						<h2><strong>RH?</strong></h2>
-						<img src="img/kiddingme.gif" alt="Como assim?">
+					<section data-background="img/kiddingme.gif">
+						<h2 class="big-title"><strong>RH?</strong></h2>
 					</section>
 					<section>
 						<h2 class="big-title">Sim!</h2>
@@ -157,6 +156,7 @@
 			// More info https://github.com/hakimel/reveal.js#configuration
 			Reveal.initialize({
 				history: true,
+				fragments: true,
 
 				// More info https://github.com/hakimel/reveal.js#dependencies
 				dependencies: [
