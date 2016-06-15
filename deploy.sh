@@ -28,8 +28,11 @@ git remote add upstream "https://$GH_TOKEN@github.com/wendelnascimento/Curso-git
 git fetch upstream
 git reset upstream/gh-pages
 
-echo "http://wendelnascimento.github.io/Curso-git/" > CNAME
+echo "wendelnascimento.github.io/Curso-git/" > CNAME
+
+ls -l
 
 git add -A .
+git status
 git commit -m "rebuild pages at ${rev}"
 git push -q upstream HEAD:gh-pages
