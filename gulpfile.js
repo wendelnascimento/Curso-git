@@ -9,13 +9,13 @@ var browserSync = require('browser-sync');
 
 // Corrige o erro no build do travis
 // http://stackoverflow.com/questions/32490328/gulp-autoprefixer-throwing-referenceerror-promise-is-not-defined
-require('es6-promise').polyfill();
+//require('es6-promise').polyfill();
 
 var paths = {
   assets: [
-    './client/img/**/*.*',
-    './client/lib/**/*.*',
-    './client/plugin/**/*.*'
+    'client/img/**/*.*',
+    'client/lib/**/*.*',
+    'client/plugin/**/*.*'
   ]
 }
 
@@ -53,7 +53,7 @@ gulp.task('scripts', function(){
         this.emit('end');
     }}))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('buid/js/'))
+    .pipe(gulp.dest('build/js/'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
     .pipe(gulp.dest('build/js/'))
@@ -67,11 +67,12 @@ gulp.task('html', function() {
 
 gulp.task('copy', function () {
   return gulp.src(paths.assets, {
-    base: '/client'
-  }).pipe(gulp.dest('/build'));
+    base: 'client/'
+  })
+    .pipe(gulp.dest('build/'));
 });
 
-gulp.task('default', ['browser-sync', 'scripts', 'styles', 'html'], function(){
+gulp.task('default', ['browser-sync', 'scripts', 'styles', 'html', 'copy'], function(){
   gulp.watch("client/scss/**/*.scss", ['styles']);
   gulp.watch("client/scripts/**/*.js", ['scripts']);
   gulp.watch("client/*.html", ['bs-reload']);
