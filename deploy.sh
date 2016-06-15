@@ -2,7 +2,6 @@
 set -e # Exit with nonzero exit code if anything fails
 
 SOURCE_BRANCH="master"
-TARGET_BRANCH="gh-pages"
 BUILD_DIR="build"
 
 # Pull requests and commits to other branches shouldn't try to deploy, just build to verify
