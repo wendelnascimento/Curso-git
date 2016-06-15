@@ -9,7 +9,7 @@ var browserSync = require('browser-sync');
 
 // Corrige o erro no build do travis
 // http://stackoverflow.com/questions/32490328/gulp-autoprefixer-throwing-referenceerror-promise-is-not-defined
-require('es6-promise').polyfill();
+//require('es6-promise').polyfill();
 
 var paths = {
   assets: [
