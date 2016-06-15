@@ -52,7 +52,7 @@ gulp.task('scripts', function(){
     .pipe(browserSync.reload({stream:true}))
 });
 
-gulp.task('html' function() {
+gulp.task('html', function() {
   return gulp.src('*.html')
     .pipe(gulp.dest('build/'))
 });
