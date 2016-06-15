@@ -25,7 +25,7 @@ gulp.task('bs-reload', function () {
 
 
 gulp.task('styles', function(){
-  gulp.src(['scss/**/*.scss'])
+  gulp.src(['client/scss/**/*.scss'])
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -33,29 +33,34 @@ gulp.task('styles', function(){
     }}))
     .pipe(sass())
     .pipe(autoprefixer('last 2 versions'))
-    .pipe(gulp.dest('css/'))
+    .pipe(gulp.dest('build/css/'))
     .pipe(browserSync.reload({stream:true}))
 });
 
 gulp.task('scripts', function(){
-  return gulp.src('scripts/**/*.js')
+  return gulp.src('client/scripts/**/*.js')
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
         this.emit('end');
     }}))
     .pipe(concat('main.js'))
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest('buid/js/'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
-    .pipe(gulp.dest('js/'))
+    .pipe(gulp.dest('build/js/'))
     .pipe(browserSync.reload({stream:true}))
 });
 
-gulp.task('default', ['browser-sync', 'styles'], function(){
-  gulp.watch("scss/**/*.scss", ['styles']);
-  gulp.watch("scripts/**/*.js", ['scripts']);
-  gulp.watch("*.html", ['bs-reload']);
+gulp.task('html' function() {
+  return gulp.src('*.html')
+    .pipe(gulp.dest('build/'))
 });
 
-gulp.task('travis', ['scripts', 'styles']);
+gulp.task('default', ['browser-sync', 'scripts', 'styles', 'html'], function(){
+  gulp.watch("client/scss/**/*.scss", ['styles']);
+  gulp.watch("client/scripts/**/*.js", ['scripts']);
+  gulp.watch("client/*.html", ['bs-reload']);
+});
+
+gulp.task('travis', ['scripts', 'styles', 'html']);
