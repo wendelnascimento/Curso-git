@@ -20,7 +20,7 @@ cd $BUILD_DIR
 
 # Initialize a new repository then set name and email
 git init
-git config user.name "$COMMIT_AUTHOR_NAME"
+git config user.name "Travis CI"
 git config user.email "$COMMIT_AUTHOR_EMAIL"
 
 # Add and fetch our remote
