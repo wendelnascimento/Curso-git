@@ -33,3 +33,23 @@ node_modules
 .node_repl_history
 
 build
+client/fonts/fontawesome-webfont.eot
+client/fonts/fontawesome-webfont.svg
+client/fonts/fontawesome-webfont.ttf
+client/fonts/fontawesome-webfont.woff
+client/fonts/fontawesome-webfont.woff2
+client/fonts/FontAwesome.otf
+client/scss/font-awesome/font-awesome.scss
+client/scss/font-awesome/_fixed-width.scss
+client/scss/font-awesome/_variables.scss
+client/scss/font-awesome/_screen-reader.scss
+client/scss/font-awesome/_list.scss
+client/scss/font-awesome/_icons.scss
+client/scss/font-awesome/_core.scss
+client/scss/font-awesome/_path.scss
+client/scss/font-awesome/_mixins.scss
+client/scss/font-awesome/_rotated-flipped.scss
+client/scss/font-awesome/_bordered-pulled.scss
+client/scss/font-awesome/_larger.scss
+client/scss/font-awesome/_stacked.scss
+client/scss/font-awesome/_animated.scss
