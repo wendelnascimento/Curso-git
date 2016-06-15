@@ -12,11 +12,11 @@ var browserSync = require('browser-sync');
 require('es6-promise').polyfill();
 
 var paths = {
-  assets: {
+  assets: [
     './client/img/**/*.*',
     './client/lib/**/*.*',
     './client/plugin/**/*.*'
-  }
+  ]
 }
 
 gulp.task('browser-sync', function() {
