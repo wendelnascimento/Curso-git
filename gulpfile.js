@@ -11,6 +11,14 @@ var browserSync = require('browser-sync');
 // http://stackoverflow.com/questions/32490328/gulp-autoprefixer-throwing-referenceerror-promise-is-not-defined
 require('es6-promise').polyfill();
 
+var paths = {
+  assets: {
+    './client/img/**/*.*',
+    './client/lib/**/*.*',
+    './client/plugin/**/*.*'
+  }
+}
+
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
@@ -38,7 +46,7 @@ gulp.task('styles', function(){
 });
 
 gulp.task('scripts', function(){
-  return gulp.src('client/scripts/**/*.js')
+  return gulp.src('client/js/**/*.js')
     .pipe(plumber({
       errorHandler: function (error) {
         console.log(error.message);
@@ -57,10 +65,16 @@ gulp.task('html', function() {
     .pipe(gulp.dest('build/'))
 });
 
+gulp.task('copy', function () {
+  return gulp.src(paths.assets, {
+    base: '/client'
+  }).pipe(gulp.dest('/build'));
+});
+
 gulp.task('default', ['browser-sync', 'scripts', 'styles', 'html'], function(){
   gulp.watch("client/scss/**/*.scss", ['styles']);
   gulp.watch("client/scripts/**/*.js", ['scripts']);
   gulp.watch("client/*.html", ['bs-reload']);
 });
 
-gulp.task('travis', ['scripts', 'styles', 'html']);
+gulp.task('travis', ['scripts', 'styles', 'html', 'copy']);
