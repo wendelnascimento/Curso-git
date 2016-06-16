@@ -1,0 +1,96 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Git ninja! Apresentação</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<link rel="stylesheet" href="css/styles.css">
+
+		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
+
+		<!-- Printing and PDF exports
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script> -->
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+        <section data-background="#FFF">
+					<img src="img/senai-logo-preto.svg" alt="SENAI" class="logo">
+				</section>
+
+        <section>
+					<h2 class="big-title">Good tarde</h2>
+				</section>
+
+				<section>
+					<div>
+						<h1><img src="img/git.svg" alt="GIT" class="logo"></h1>
+					</div>
+				</section>
+
+        <section>
+          <section>
+            <p class="left medium-text">Após esse workshop, eu serei capaz de...</p>
+            <ul class="list-style-none list-dash lista-features">
+              <li class="item medium-text">Estabelecer um fluxo eficiente de trabalho em equipe</li>
+              <li class="item medium-text fragment fade-in">Ter controle das alterações</li>
+            </ul>
+          </section>
+          <section>
+            <ul class="list-style-none list-dash lista-features">
+              <li class="item medium-text fade-in">Desfazer coisas</li>
+              <li class="item medium-text fragment fade-in">Dominar grande parte dos "comandos perdidos" do Git</li>
+              <li class="item medium-text fragment fade-in">Ter o orgulho de dizer que é um Git ninja!</li>
+            </ul>
+          </section>
+        </section>
+
+        <section data-background="#FFF">
+          <img src="img/senai-logo-preto.svg" alt="SENAI" class="logo">
+        </section>
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/main.js"></script>
+
+		<script>
+			// More info https://github.com/hakimel/reveal.js#configuration
+			Reveal.initialize({
+				history: true,
+				fragments: true,
+				slideNumber: true,
+        multiplex: {
+            // Example values. To generate your own, see the socket.io server instructions.
+            secret: '14660848797003405273', // null so the clients do not have control of the master presentation
+            id: 'cb569e32f5c3c1cf', // id, obtained from socket.io server
+            url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh/' // Location of your socket.io server
+        },
+
+				// More info https://github.com/hakimel/reveal.js#dependencies
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+
+          { src: 'https://cdn.socket.io/socket.io-1.4.5.js', async: true },
+          { src: 'plugin/multiplex/master.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
