@@ -30,7 +30,8 @@ var paths = {
 gulp.task('browser-sync', function() {
   browserSync({
     server: {
-       baseDir: "./build"
+       baseDir: "./build",
+       index: 'index.html'
     }
   });
 });
@@ -98,7 +99,7 @@ gulp.task('default', ['build', 'browser-sync'], function(){
   gulp.watch("client/scss/**/*.scss", ['styles']);
   gulp.watch("client/scripts/**/*.js", ['scripts']);
   gulp.watch("*.html", function(cb) {
-    sequence('html', 'bs-reload', cb)
+    sequence('html', 'bs-reload')
   });
 });
 
