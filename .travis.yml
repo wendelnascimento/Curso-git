@@ -8,6 +8,9 @@ before_script:
 script: gulp travis
 after_success:
   - bash deploy.sh
-  - node plugin/multiplex
+  - ls -l
+  - cd plugin
+  - ls -l
+  - node multiplex
 dd:
   secure: yoNZPjrtxNGvcOXbKovWGbncyOUBVldKeZEz4Clm/a3nfGHvBj9f29JMVJcnMAy0JXxa2cRQMi5xLYnfB8aZV5nFdBjNq2AVkmPZcxS22PamjRxoI7sy9zAODjzJ9vpZZwr11z29dfgyoTbZ3YJ+R1FZ02ztyMdNk0c+2I4bWiuWKaeyDFV956Dz7ImR3CpjY1l8jNCVFnC7uO+kBEpveD7WBwm3v8pwQpSIl3PVJ/WSa6SBrJv9Bnx9EU/IfW3GzFZMPGg2FntYf1KkJpmQstsO99tUSxL1iQui7MJYRJem0djUBOD69t+3mSKAXvngH9SMwO3upcaZz0jHQ4zhkASPw63Zk1gc3FTROYEYUO3eHV68JOzIMgN2YEPGJmfnVEoCK+J2wwyBNPCtuJmOq3+GabWly8mMC/9TMy/xlX7cBdN2XN0uPqCQeb5frt/O1kf5frxUC50PITF8SMSW4N8IIv40oKbPbdAUsMGC4ZQVT2rQYpMTbpFqFpiJEcs9V75/AyiqyYfKA1IhVhGTMIvHsxCMHq9zfsyvEfJwM1iB0ECYiNyfeI30ME1oBn0byNNjU50X5iF94PTU4/rTLScHOSuvByoXOX8dbC00JIkJwR5NEythuZlL0v7GkydTXyIVWagrhFQu1olvkFEi5JoUYWGvtBRUvRTdFOAsrc0=
