@@ -17,7 +17,8 @@ var paths = {
     'client/img/**/*.*',
     'client/lib/**/*.*',
     'client/plugin/**/*.*',
-    'client/fonts/**/*.*'
+    'client/fonts/**/*.*',
+    'client/js/manifest.json'
   ],
   scss: [
     'node_modules/font-awesome/scss/**/*.*'

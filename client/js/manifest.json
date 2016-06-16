@@ -1,0 +1,16 @@
+{
+  "name": "Git ninja",
+  "short_name": "Git ninja",
+  "description": "Curso rápido de Git",
+  "theme_color": "#BDBDBD",
+  "background-color": "#FFFFFF",
+  "start_url": "/",
+  "display": "standalone",
+  "icons": [
+    {
+      "src": "../img/senai-logo-preto.svg",
+      "sizes": "48x48",
+      "type": "image/svg+html"
+    }
+  ]
+}
