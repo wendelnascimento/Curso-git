@@ -102,4 +102,4 @@ gulp.task('default', ['build', 'browser-sync'], function(){
   });
 });
 
-gulp.task('travis', ['scripts', 'styles', 'html', 'copy']);
+gulp.task('travis', ['build']);
