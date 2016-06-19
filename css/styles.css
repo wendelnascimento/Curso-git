@@ -2174,6 +2174,9 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0; }
 
+a {
+  color: #000; }
+
 .left {
   float: left;
   text-align: left; }
@@ -2239,3 +2242,6 @@ body {
 .medium-code {
   font-size: 60px !important;
   font-size: 3.75rem !important; }
+
+.highlight-red {
+  color: #ff2c2d; }

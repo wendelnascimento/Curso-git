@@ -84,7 +84,7 @@
 						<h2 class="medium-text">Open-source</h2>
 					</section>
 					<section>
-						<h2 class="medium-text">Criado por Linus Torvalds <i class="fa fa-linux"></i></h2>
+						<h2 class="medium-text">Criado por Linus Torvalds <i class="emoji emoji-penguin"></i></h2>
 					</section>
 				</section>
 
@@ -94,9 +94,9 @@
 					</section>
 					<section>
 						<ul class="list-style-none lista-features">
-							<li class="item medium-text">Performace <i class="fa fa-rocket"></i></li>
-							<li class="item medium-text fragment fade-in">Segurança <i class="fa fa-lock"></i></li>
-							<li class="item medium-text fragment fade-in">Flexibilidade <i class="fa fa-list-ul"></i></li>
+							<li class="item medium-text">Performace <i class="emoji emoji-rocket"></i></li>
+							<li class="item medium-text fragment fade-in">Segurança <i class="emoji emoji-lock"></i></li>
+							<li class="item medium-text fragment fade-in">Flexibilidade <i class="emoji emoji-juggling"></i></li>
 						</ul>
 					</section>
 					<!-- <img src="img/meobrigue.gif" alt=""> -->
@@ -246,7 +246,7 @@
 							Caso você use Windows
 						</p>
 						<p>
-							<a href="https://git-scm.com/download/win" class="big-title">git-scm.com</a>
+							<a href="https://git-scm.com/download/win" target="_blank" class="big-title">git-scm.com</a>
 						</p>
 					</section>
 					<section>
@@ -254,7 +254,7 @@
 							Caso você use Linux
 						</p>
 						<p>
-							<a href="https://git-scm.com/download/linux" class="big-title">git-scm.com</a>
+							<a href="https://git-scm.com/download/linux" target="_blank" class="big-title">git-scm.com</a>
 						</p>
 					</section>
 					<section>
@@ -262,12 +262,12 @@
 							Caso você use Mac
 						</p>
 						<p>
-							<a href="https://git-scm.com/download/mac" class="big-title">git-scm.com</a>
+							<a href="https://git-scm.com/download/mac" target="_blank" class="big-title">git-scm.com</a>
 						</p>
 					</section>
 					<section>
 						<p class="medium-text">
-							Mas como eu tenho um bom coração, já instalei para todos vocês <i class="fa fa-heart"></i>
+							Mas como eu tenho um bom coração, já instalei para todos vocês <i class="emoji emoji-red-heart"></i>
 						</p>
 					</section>
 				</section>
@@ -301,7 +301,7 @@
 						</h2>
 						<pre>
 							<code class="medium-code" data-trim data-noescape>
-								$ git remote add origin <br>https://github.com/wendelnascimento/curso-git.git
+								$ git remote add origin <br>https://github.com/wendelnascimento/alunos-curso-git.git
 							</code>
 						</pre>
 					</section>
@@ -318,9 +318,72 @@
 					<section>
 						<pre>
 							<code class="medium-code" data-trim data-noescape>
-								$ git clone <br>https://github.com/wendelnascimento/curso-git.git
+								$ git clone <br>https://github.com/wendelnascimento/alunos-curso-git.git
 							</code>
 						</pre>
+						<p class="medium-text">
+							O git clone faz um download de um repositório remoto, caso você não esteja começando um do zero, é ele que você deve usar
+						</p>
+					</section>
+				</section>
+
+				<section data-background="#FFFFFF">
+					<section>
+						<h2 class="big-title">
+							Neste caso, usaremos o remote add origin
+						</h2>
+					</section>
+					<section>
+						<p class="medium-text">git remote add origin <a href="https://github.com/wendelnascimento/alunos-curso-git" target="_blank">https://github.com/wendelnascimento/alunos-curso-git.git</a></p>
+					</section>
+					<section>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git pull
+							</code>
+						</pre>
+						<p class="medium-text">O git pull faz o download de todas as <strong>alterações</strong> que foram feitas no repositório</p>
+					</section>
+					<section>
+						<p class="medium-text">Após o pull, mudou alguma coisa na pasta de vocês?</p>
+					</section>
+					<section>
+						<p class="medium-text">Até agora tudo foi tranquilo...</p>
+						<h2 class="big-title">Até agora <i class="emoji emoji-smiling-face-halo"></i></h2>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<ol>
+							<li class="medium-text">Abra seu editor de texto preferido(Só não vale bloco de notas)</li>
+							<li class="medium-text fragment">Abra a pasta do nosso projeto em seu editor</li>
+							<li class="medium-text fragment">Crie um novo arquivo com o nome <strong>index.html</strong></li>
+						</ol>
+					</section>
+					<section>
+						<p class="medium-text">Dentro deste arquivo, digite</p>
+						<pre>
+							<code class="medium-code" data-trim>
+								&lt;html>&lt;/html>
+							</code>
+						</pre>
+					</section>
+					<section>
+						<p class="medium-text">Salve e volte ao Git Bash, precisamos subir este arquivo para o nosso repositório remoto</p>
+					</section>
+					<section>
+						<p class="medium-text">Primeiro, precisamos ver quais os arquivos que alteramos</p>
+						<pre>
+							<code class="medium-code" data-trim>
+								$ git status
+							</code>
+						</pre>
+					</section>
+					<section>
+						<p class="medium-text">Este comando deve te retornar algo parecido com isso:</p>
+						<p class="medium-text highlight-red">index.html</p>
+						<p class="medium-text">Certo?</p>
 					</section>
 				</section>
 			</div>
