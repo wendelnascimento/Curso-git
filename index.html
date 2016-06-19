@@ -13,6 +13,9 @@
 
 		<link rel="stylesheet" href="css/styles.css">
 
+		<link rel="stylesheet" href="css/emojis.css">
+
+
 		<link href='https://fonts.googleapis.com/css?family=Roboto:400,700|Montserrat:400,700' rel='stylesheet' type='text/css'>
 
 		<!-- Printing and PDF exports
@@ -26,7 +29,7 @@
 	</head>
 	<body>
 		<div class="reveal">
-			<img src="img/senai-logo-preto.svg" alt="SENAI" class="senai-logo">
+			<img src="img/senai-logo-preto.svg" alt="SENAI" id="senai-logo" class="senai-logo">
 			<div class="slides">
 				<section>
 					<div>
@@ -41,7 +44,7 @@
 						<p>Front-end developer</p>
 						<ul class="social-media">
 							<li class="item">
-								<a href="https://github.com/wendelnascimento" target="_blank"><img src="img/github-logo.svg" alt="Github" class="icon"></a>
+								<a href="https://github.com/wendelnascimento" target="_blank"><img src="img/github-logo-mini.svg" alt="Github" class="icon"></a>
 							</li>
 							<li class="item">
 								<a href="https://br.linkedin.com/in/wendel-nascimento-b2979291" target="_blank"><img src="img/linkedin-logo.svg" alt="Linkedin" class="icon"></a>
@@ -135,6 +138,7 @@
 						<h2 class="big-title">Sim!</h2>
 					</section>
 				</section>
+
 				<section>
 					<section>
 						<p class="medium-text left">Mas Wendel,</p>
@@ -164,11 +168,167 @@
 						<img src="img/fluxo-basico-git.svg" alt="Fluxo básico">
 					</section>
 				</section>
+				
+				<section>
+					<section>
+						<h2 class="big-title">Repositórios</h2>
+					</section>
+					<section>
+						<p class="medium-text">Diretórios nos quais o Git trabalha</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 class="big-title">Commits</h2>
+					</section>
+					<section>
+						<p class="medium-text">
+							São <i>snapshots</i> do seu trabalho
+						</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 class="big-title">Branches</h2>
+						<p class="medium-text">O que são? Por que usamos? O que acontece com eles? Hoje, no Wendel repórter</p>
+					</section>
+					<section>
+						<p class="left medium-text">Um branch é basicamente</p>
+						<h2 class="left big-title no-margin-top">Uma cópia do seu trabalho</h2>
+					</section>
+				</section>
+
+				<section>
+					<h2 class="big-title">E milhares de outras coisas</h2>
+					<p class="medium-text">Que veremos daqui a pouquinho, na prática</p>
+				</section>
+
+				<section data-background="#FFFFFF">
+					<section>
+						<img src="img/github-logo.svg" alt="Github">
+					</section>
+					<section>
+						<ul class="list-style-none list-dash lista-features">
+							<li class="item medium-text">Gratuito</li>
+							<li class="item medium-text fragment">Comunidade ampla</li>
+							<li class="item medium-text fragment">Integrações</li>
+							<li class="item medium-text fragment">Funcionalidades que facilitam a nossa vida</li>
+						</ul>
+					</section>
+					<section>
+						<p class="medium-text">Alternativamente temos...</p>
+						<ul class="list-style-none">
+							<li>
+								<img class="brand-logo" src="img/bitbucket-logo.svg" alt="Bitbucket">
+							</li>
+							<li>
+								<img class="brand-logo" src="img/gitlab-logo.svg" alt="GitLab">
+							</li>
+						</ul>
+					</section>
+					<section>
+						<h2 class="big-title">Mas hoje iremos utilizar o GitHub</h2>
+						<p class="medium-text">Então vamos criar nossa conta e começar a brincar de versionar</p>
+					</section>
+				</section>
+				<section>
+					<section>
+						<p class="medium-text">Professor, eu criei minha conta, mas como que eu uso isso?</p>
+					</section>
+					<section data-background="img/john-travolta.gif"></section>
+					<section>
+						<h2 class="big-title left no-margin-top">Instalando o Git em sua máquina</h2>
+					</section>
+					<section>
+						<p class="medium-text">
+							Caso você use Windows
+						</p>
+						<p>
+							<a href="https://git-scm.com/download/win" class="big-title">git-scm.com</a>
+						</p>
+					</section>
+					<section>
+						<p class="medium-text">
+							Caso você use Linux
+						</p>
+						<p>
+							<a href="https://git-scm.com/download/linux" class="big-title">git-scm.com</a>
+						</p>
+					</section>
+					<section>
+						<p class="medium-text">
+							Caso você use Mac
+						</p>
+						<p>
+							<a href="https://git-scm.com/download/mac" class="big-title">git-scm.com</a>
+						</p>
+					</section>
+					<section>
+						<p class="medium-text">
+							Mas como eu tenho um bom coração, já instalei para todos vocês <i class="fa fa-heart"></i>
+						</p>
+					</section>
+				</section>
+
+				<section data-background="img/horadoshow.jpg">
+					<h2 class="big-title">Hora do show</h2>
+					<p>BIRLLLLLL</p>
+				</section>
+
+				<section>
+					<section>
+						<ol>
+							<li class="medium-text">Crie uma pasta chamada <pre>Git</pre></li>
+							<li class="medium-text fragment">Clique com o botão direito dentro da pasta e clique em <pre>Git Bash Here</pre></li>
+						</ol>
+					</section>
+					<section>
+						<h2 class="medium-text">E então...</h2>
+						<pre>
+							<code data-trim>
+								$ git init
+							</code>
+						</pre>
+						<p class="medium-text">
+							Inicializa um repositório(lembra dos repositórios?) no diretório atual
+						</p>
+					</section>
+					<section>
+						<h2 class="medium-text">
+							Adicionamos o nosso repositório remoto
+						</h2>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git remote add origin <br>https://github.com/wendelnascimento/curso-git.git
+							</code>
+						</pre>
+					</section>
+					<section>
+						<h2 class="big-title">Agora é só ser feliz</h2>
+					</section>
+					<section>
+						<h2 class="big-title">Mentira <i class="emoji emoji-broken-heart"></i></h2>
+						<p class="medium-text">Ainda vamos ver: <pre class="medium-text">clone, config, add, <strong>commit</strong>, etc...</pre></p>
+					</section>
+				</section>
+				
+				<section>
+					<section>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git clone <br>https://github.com/wendelnascimento/curso-git.git
+							</code>
+						</pre>
+					</section>
+				</section>
 			</div>
 		</div>
 
 		<script src="lib/js/head.min.js"></script>
-		<script src="js/main.js"></script>
+		<script src="js/reveal.js"></script>
+		<script src="js/presentation.js"></script>
 
 		<script>
 			// More info https://github.com/hakimel/reveal.js#configuration

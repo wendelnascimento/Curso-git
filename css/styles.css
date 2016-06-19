@@ -2193,7 +2193,14 @@ body {
   z-index: 10;
   position: relative; }
 
+.brand-logo {
+  max-width: 100vh; }
+
 .big-title {
+  font-size: 100px !important;
+  font-size: 6.25rem !important; }
+
+.hljs {
   font-size: 100px !important;
   font-size: 6.25rem !important; }
 
@@ -2228,3 +2235,7 @@ body {
   font-size: 52px !important;
   font-size: 3.25rem !important;
   font-weight: normal; }
+
+.medium-code {
+  font-size: 60px !important;
+  font-size: 3.75rem !important; }
