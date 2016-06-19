@@ -3,7 +3,55 @@
   &.emoji-broken-heart {
     &:after {
       content: '\1f494';
-      color:orange; /* yellow: not enough contrast with white background */
     }
   }
+
+  &.emoji-rocket {
+    &:after {
+      content: '\1f680';
+    }
+  }
+
+  &.emoji-lock {
+    &:after {
+      content: '\1f512';
+    }
+  }
+
+  &.emoji-juggling {
+    &:after {
+      content: '\1f939';
+    }
+  }
+
+  &.emoji-penguin {
+    &:after {
+      content: '\1f427';
+    }
+  }
+
+  &.emoji-red-heart {
+    &:after {
+      content: '\2764';
+    }
+  }
+
+  &.emoji-smiling-face-horns {
+    &:after {
+      content: '\1f608';
+    }
+  }
+
+  &.emoji-baby-angel {
+    &:after {
+      content: '\1f47c';
+    }
+  }
+
+  &.emoji-smiling-face-halo {
+    &:after {
+      content: '\1f607';
+    }
+  }
+  
 }
