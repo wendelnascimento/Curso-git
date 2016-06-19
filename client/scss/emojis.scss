@@ -1,0 +1,9 @@
+.emoji {
+  font-style: normal;
+  &.emoji-broken-heart {
+    &:after {
+      content: '\1f494';
+      color:orange; /* yellow: not enough contrast with white background */
+    }
+  }
+}

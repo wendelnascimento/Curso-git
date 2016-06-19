@@ -62,7 +62,6 @@ gulp.task('scripts', function(){
         console.log(error.message);
         this.emit('end');
     }}))
-    .pipe(concat('main.js'))
     .pipe(gulp.dest('build/js/'))
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())
@@ -98,7 +97,8 @@ gulp.task('build', function(cb) {
 
 gulp.task('default', ['build', 'browser-sync'], function(){
   gulp.watch("client/scss/**/*.scss", ['styles']);
-  gulp.watch("client/scripts/**/*.js", ['scripts']);
+  gulp.watch("client/js/**/*.js", ['scripts']);
+  gulp.watch("client/img/**/*.*", ['copy']);
   gulp.watch("*.html", function(cb) {
     sequence('html', 'bs-reload')
   });

@@ -12,7 +12,15 @@
 	position: relative;
 }
 
+.brand-logo {
+	max-width: 100vh;
+}
+
 .big-title {
+	@include fontSize(100px);
+}
+
+.hljs {
 	@include fontSize(100px);
 }
 
@@ -57,4 +65,8 @@
 .medium-text {
   @include fontSize(52px);
 	font-weight: normal;
+}
+
+.medium-code {
+	@include fontSize(60px);
 }
