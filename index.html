@@ -96,7 +96,7 @@
 						<ul class="list-style-none lista-features">
 							<li class="item medium-text">Performace <i class="emoji emoji-rocket"></i></li>
 							<li class="item medium-text fragment fade-in">Segurança <i class="emoji emoji-lock"></i></li>
-							<li class="item medium-text fragment fade-in">Flexibilidade <i class="emoji emoji-juggling"></i></li>
+							<li class="item medium-text fragment fade-in">Flexibilidade <i class="emoji emoji-left-right-arrow"></i></li>
 						</ul>
 					</section>
 					<!-- <img src="img/meobrigue.gif" alt=""> -->
@@ -168,7 +168,7 @@
 						<img src="img/fluxo-basico-git.svg" alt="Fluxo básico">
 					</section>
 				</section>
-				
+
 				<section>
 					<section>
 						<h2 class="big-title">Repositórios</h2>
@@ -313,7 +313,7 @@
 						<p class="medium-text">Ainda vamos ver: <pre class="medium-text">clone, config, add, <strong>commit</strong>, etc...</pre></p>
 					</section>
 				</section>
-				
+
 				<section>
 					<section>
 						<pre>
@@ -352,7 +352,7 @@
 						<h2 class="big-title">Até agora <i class="emoji emoji-smiling-face-halo"></i></h2>
 					</section>
 				</section>
-				
+
 				<section>
 					<section>
 						<ol>
@@ -384,6 +384,135 @@
 						<p class="medium-text">Este comando deve te retornar algo parecido com isso:</p>
 						<p class="medium-text highlight-red">index.html</p>
 						<p class="medium-text">Certo?</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<h2 class="medium-text">Agora podemos adicionar os arquivos à nossa área de stage</h2>
+					</section>
+					<section>
+						<h2 class="big-title">Área de stage?</h2>
+					</section>
+					<section>
+						<h2 class="medium-text">A área de stage é basicamente o lugar onde você escolhe quais arquivos irão para o repositório remoto</h2>
+					</section>
+				</section>
+
+				<section>
+					<pre>
+						<code class="medium-code" data-trim>
+							$ git add index.html
+						</code>
+					</pre>
+					<p class="medium-text">
+						Com isso, estamos quaaaase prontos para subir nossos arquivos para o nosso repositório remoto. Precisamos apenas dar um commit
+					</p>
+				</section>
+
+				<section>
+					<section>
+						<h2 class="medium-text">Um commit é, basicamente, um "snapshot" do estado atual dos seus arquivos.</h2>
+					</section>
+					<section>
+						<h2 class="medium-text">Ele guarda informações como data, hora, arquivos modificados e estado dos arquivos modificados.</h2>
+					</section>
+					<section>
+						<h2 class="medium-text">Tudo isso pode ser usado para quando você precisar desfazer alguma coisa, por exemplo</h2>
+					</section>
+					<section>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git commit -m <br>"Criação do index"
+							</code>
+						</pre>
+						<p class="medium-text">Agora estamos prontos para subir para o repositório remoto</p>
+					</section>
+					<section data-background="img/celebration.gif"></section>
+					<section>
+						<h2 class="medium-text">Lembre-se, tudo o que você fez <strong>até agora</strong>, foi local, ou seja, <span class="highlight-red">nada está no repositório remoto</span></h2>
+					</section>
+					<section>
+						<h2 class="big-title">
+							Até agora...
+						</h2>
+					</section>
+					<section>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git push origin master
+							</code>
+						</pre>
+						<p class="medium-text">Esse é o "comando do alívio"</p>
+					</section>
+					<section>
+						<h2 class="medium-text">Pronto. É só digitar seu <i>username</i>, senha e partir pro abraço <i class="emoji emoji-red-heart"></i></h2>
+					</section>
+				</section>
+
+				<section>
+					<h2 class="big-title">Funcionou?</h2>
+				</section>
+
+				<section>
+					<section>
+						<h2 class="medium-text">
+							Parabéns, temos um conflito <i class="emoji emoji-party-popper"></i>
+						</h2>
+					</section>
+					<section>
+						<h2 class="big-title">Ok, como resolvo isso?</h2>
+					</section>
+					<section>
+						<h2 class="medium-text">Vamos com calma, primeiro, volte ao editor de texto, seu arquivo deve estar parecido com isso</h2>
+						<img src="img/conflito.jpg" alt="Conflito">
+					</section>
+					<section>
+						<img src="img/conflito.jpg" alt="Conflito">
+						<p class="medium-text">Vamos entender melhor isso</p>
+					</section>
+				</section>
+
+				<section>
+					<section>
+						<p class="medium-text left">Professor, resolvi o conflito, e agora?</p>
+						<h2 class="big-title left no-margin-top">Criamos um novo <i>commit</i>, ué</h2>
+					</section>
+					<section>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git add index.html
+							</code>
+						</pre>
+					</section>
+					<section>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git commit -m <br>"Resolvendo conflitos"
+							</code>
+						</pre>
+					</section>
+					<section>
+						<pre>
+							<code class="medium-code" data-trim data-noescape>
+								$ git push origin master
+							</code>
+						</pre>
+					</section>
+					<section data-background="img/awyeah.gif"></section>
+				</section>
+
+				<section>
+					<section>
+						<p class="medium-text left">Professor,</p>
+						<h2 class="big-title left no-margin-top">Qual vai ser o problema agora?</h2>
+					</section>
+					<section>
+						<h2 class="big-title">Não tem mais problema agora</h2>
+					</section>
+					<section>
+						<h2 class="big-title">Sério</h2>
+						<p class="medium-text">Não tem problema <strong>agora</strong></p>
 					</section>
 				</section>
 			</div>

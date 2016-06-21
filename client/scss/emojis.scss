@@ -53,5 +53,17 @@
       content: '\1f607';
     }
   }
-  
+
+  &.emoji-left-right-arrow {
+    &:after {
+      content: '\2194';
+    }
+  }
+
+  &.emoji-party-popper {
+    &:after {
+      content: '\1f389';
+    }
+  }
+
 }

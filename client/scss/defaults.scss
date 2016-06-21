@@ -1,4 +1,4 @@
-$indigoA100: #bdbdbd;
+$background-color: #cacaca;
 $fa-font-path:"../fonts";
 @import "font-awesome/font-awesome";
 
@@ -8,13 +8,14 @@ $fa-font-path:"../fonts";
 }
 
 body {
-	background-color: $indigoA100;
+	background-color: $background-color;
 	font-family: 'Roboto', sans-serif;
   margin: 0;
+  color: #404040;
 }
 
 a {
-  color: #000;
+  color: #404040;
 }
 
 .left {
