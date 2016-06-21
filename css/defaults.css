@@ -2178,6 +2178,9 @@ body {
 a {
   color: #404040; }
 
+.inverted-text {
+  color: #bfbfbf; }
+
 .left {
   float: left;
   text-align: left; }

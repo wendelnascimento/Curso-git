@@ -2178,6 +2178,9 @@ body {
 a {
   color: #404040; }
 
+.inverted-text {
+  color: #bfbfbf; }
+
 .left {
   float: left;
   text-align: left; }
@@ -2199,6 +2202,9 @@ a {
 
 .brand-logo {
   max-width: 60vh; }
+
+.fit-image {
+  max-width: 80vh; }
 
 .big-title {
   font-size: 100px !important;

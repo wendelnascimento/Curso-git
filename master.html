@@ -831,12 +831,12 @@
 				history: true,
 				fragments: true,
 				slideNumber: 'c/t',
-				multiplex: {
-						// Example values. To generate your own, see the socket.io server instructions.
-						secret: null, // null so the clients do not have control of the master presentation
-						id: 'cb569e32f5c3c1cf', // id, obtained from socket.io server
-						url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh/' // Location of your socket.io server
-				},
+        multiplex: {
+            // Example values. To generate your own, see the socket.io server instructions.
+            secret: '14660848797003405273', // null so the clients do not have control of the master presentation
+            id: 'cb569e32f5c3c1cf', // id, obtained from socket.io server
+            url: 'https://reveal-js-multiplex-ccjbegmaii.now.sh/' // Location of your socket.io server
+        },
 				// parallaxBackgroundImage: 'http://www.michaelnyffelerphotography.com/wp-content/uploads/2013/06/White-christmas-light-background.png', // e.g. "https://s3.amazonaws.com/hakim-static/reveal-js/reveal-parallax-1.jpg"
 				//
 				// // Parallax background size
@@ -852,8 +852,8 @@
 				dependencies: [
 					{ src: 'plugin/markdown/marked.js' },
 					{ src: 'plugin/markdown/markdown.js' },
-					{ src: 'https://cdn.socket.io/socket.io-1.4.5.js', async: true },
-					{ src: 'plugin/multiplex/client.js', async: true },
+          { src: 'https://cdn.socket.io/socket.io-1.4.5.js', async: true },
+          { src: 'plugin/multiplex/master.js', async: true },
 					{ src: 'plugin/notes/notes.js', async: true },
 					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
 				]
