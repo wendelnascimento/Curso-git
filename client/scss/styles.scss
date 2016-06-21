@@ -16,6 +16,10 @@
 	max-width: 60vh;
 }
 
+.fit-image {
+	max-width: 80vh;
+}
+
 .big-title {
 	@include fontSize(100px);
 }
