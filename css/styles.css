@@ -2170,12 +2170,13 @@
   clip: auto; }
 
 body {
-  background-color: #bdbdbd;
+  background-color: #cacaca;
   font-family: 'Roboto', sans-serif;
-  margin: 0; }
+  margin: 0;
+  color: #404040; }
 
 a {
-  color: #000; }
+  color: #404040; }
 
 .left {
   float: left;
@@ -2197,7 +2198,7 @@ a {
   position: relative; }
 
 .brand-logo {
-  max-width: 100vh; }
+  max-width: 60vh; }
 
 .big-title {
   font-size: 100px !important;
