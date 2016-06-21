@@ -27,7 +27,7 @@ git remote add upstream "https://$GH_TOKEN@github.com/wendelnascimento/Curso-git
 git fetch upstream
 git reset upstream/gh-pages
 
-echo "curso-git.wendelnascimento.com.br" > CNAME
+echo "wendelnascimento.com.br" > CNAME
 
 ls -l
 
