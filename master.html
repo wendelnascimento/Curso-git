@@ -28,7 +28,7 @@
 		</script> -->
 	</head>
 	<body>
-		<div class="reveal">
+    <div class="reveal">
 			<img src="img/senai-logo-preto.svg" alt="SENAI" id="senai-logo" class="senai-logo">
 			<div class="slides">
 				<section>
@@ -379,6 +379,27 @@
 				</section>
 
 				<section>
+					<h2 class="big-title">O git precisa saber quem você é</h2>
+					<p class="medium-text">Mas isso é simples, 2 comandinhos</p>
+				</section>
+				<section>
+					<p class="medium-text">Nome</p>
+					<pre>
+						<code class="medium-code" data-trim data-noescape>
+							$ git config --global <br>user.name "Seu nome"
+						</code>
+					</pre>
+				</section>
+				<section>
+					<p class="medium-text">E email</p>
+					<pre>
+						<code class="medium-code" data-trim data-noescape>
+							$ git config --global <br>user.email email@email.com
+						</code>
+					</pre>
+				</section>
+
+				<section>
 					<section>
 						<ol>
 							<li class="medium-text">Abra seu editor de texto preferido(Só não vale bloco de notas)</li>
@@ -443,7 +464,7 @@
 				</section>
 
 				<section>
-					<section>
+					<!-- <section>
 						<h2 class="medium-text">Um commit é, basicamente, um "snapshot" do estado atual dos seus arquivos.</h2>
 					</section>
 					<section>
@@ -451,7 +472,7 @@
 					</section>
 					<section>
 						<h2 class="medium-text">Tudo isso pode ser usado para quando você precisar desfazer alguma coisa, por exemplo</h2>
-					</section>
+					</section> -->
 					<section>
 						<pre>
 							<code class="medium-code" data-trim data-noescape>
@@ -490,29 +511,10 @@
 						</pre>
 						<p class="medium-text">O --amend permite que você "edite" o commit anterior, isso inclui adicionar outros arquivos aquele commit</p>
 					</section>
-					<section>
+					<!-- <section>
 						<h2 class="medium-text">Agora, com --amend feito e tudo bonitinho, só falta uma coisa</h2>
-					</section>
-					<section>
-						<h2 class="big-title">O git saber quem você é</h2>
-						<p class="medium-text">Mas isso é simples, 2 comandinhos</p>
-					</section>
-					<section>
-						<p class="medium-text">Nome</p>
-						<pre>
-							<code class="medium-code" data-trim data-noescape>
-								$ git config --global <br>user.name "Seu nome"
-							</code>
-						</pre>
-					</section>
-					<section>
-						<p class="medium-text">E email</p>
-						<pre>
-							<code class="medium-code" data-trim data-noescape>
-								$ git config --global <br>user.email email@email.com
-							</code>
-						</pre>
-					</section>
+					</section> -->
+
 					<section>
 						<h2 class="big-title">E finalmente...</h2>
 					</section>
